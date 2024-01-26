@@ -1,0 +1,30 @@
+form{
+    border-style: double;
+    padding: 3cm;
+    width: 10cm;
+    align-items: center;
+    margin: 8cm auto;
+    margin-top: 3cm;
+    background-color: cadetblue;
+}
+body{
+    background-color: black;
+}
+h1{
+    max-height: 4cm;
+    color: salmon;
+    margin: 2cm auto;
+
+}
+div{
+    color: antiquewhite;
+    border-style: outset;
+    width: 12cm;
+    margin: 6cm auto;
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+    
+}
+input{
+    width: 6cm;
+}
