@@ -1,0 +1,14 @@
+use JavaScript to validate the form, ensure fields are non empty, check password is not 123456
+After validating submitt to php.
+
+
+understand php basics:
+foreach loop
+if statements
+while statements
+functions in php
+echo usage
+Objects in php (a bit advanced but worth knowing)
+
+
+
