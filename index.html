@@ -1,0 +1,78 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student details</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        
+        <script src="index.js"></script>
+    
+        <h1 align="center">Entry Form</h1>
+<div>
+    <p align="center">700OD Coding School- Explore Your Potential.<br>
+    <a href="https://graduate.northeastern.edu/resources/most-popular-programming-languages/"><b color="white">Programing languages</b></a>
+</p>
+</div>
+
+        <form   name="myForm"  id="myForm"  >
+
+          
+
+            <label  >Full Name: </label>
+            <input type="text"  id="fullNameId" required><br>
+            <span id = "message" style="color:red"> </span> <br><br> 
+
+
+            <label>Email: </label>
+            <input type="text" id="emailId" ><br>
+            <span id = "message1" style="color:red"> </span><br><br>
+
+
+            <label >Password: </label>
+            <input type="text"  id="studentPasswordId" required><br>
+            <span id = "message2" style="color:red"> </span> <br><br>  
+
+
+            <label > Confirm Password: </label>
+            <input type="password"  id="confirmPasswordId" required><br>
+            <span id = "message3" style="color:red"> </span> <br><br>  
+
+
+            <label > Admission Number: </label>
+            <input type="text"   id="admNumberId" required><br>
+            <span id = "message4" style="color:red"> </span> <br><br> 
+
+            <label  >Estate: </label>
+            <input type="text"    id="estateId" required><br>
+            
+
+
+            <label >Gender</label><br><br>
+                <select   id="genderId" required>
+                    <option>Unspecified</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select><br><br>
+
+            <label> Programming Language: </label><br><br>
+                <select  id="proLangId" required>
+                    <option>Not selected</option>
+                    <option>Java</option>
+                    <option>Python</option>
+                    <option>Web Design</option>
+                    <option>JavaScript</option>
+                </select><br><br>
+
+    
+                <input id="submit" onclick="formValidate()" type="button" value="Submit">
+     
+
+        </form>
+        
+    </body>
+    </html>

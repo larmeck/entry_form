@@ -4,7 +4,7 @@ form{
     width: 10cm;
     align-items: center;
     margin: 8cm auto;
-    margin-top: 3cm;
+    margin-top: 1cm;
     background-color: cadetblue;
 }
 body{
@@ -21,10 +21,11 @@ div{
     border-style: outset;
     width: 12cm;
     margin: 6cm auto;
-    margin-top: 2cm;
-    margin-bottom: 2cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
     
 }
 input{
     width: 6cm;
 }
+

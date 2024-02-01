@@ -1,43 +1,52 @@
 <?php
+//creating variables form user input data from dataString in .js
+$fullName = $_POST['theName'];
+$email = $_POST['theEmail'];
+$studentPassword = $_POST['thePassword'];
+$confirmPassword = $_POST['theConfirmPassword'];
+$admNumber= $_POST['theAdmNumber'];
+$estate =$_POST['theEstate'];
+$gender =$_POST['theGender'];
+$progLang =$_POST['theProgLanguage'];
 
-$fullName = $_POST['fullName'];
-$email = $_POST['email'];
-$studentPassword = $_POST['studentPassword'];
-$confirm_password = $_POST['confirm_password'];
-$admNumber= $_POST['admNumber'];
-$gender =$_POST['gender'];
-$progLang =$_POST['progLang'];
-
-
-
-$servername="localhost";
-$dbUsername= "root";
+//creating variables of connection details
+$serverName="localhost";
+$dbUserName= "root";
 $dbPassword= "";
-$dbname= "school_records";
+$dbName= "school_records";
 
-$conn = new mysqli($servername, $dbUsername, $dbPassword, $dbname);
+
+//Creating connections to server
+$conn = new mysqli($serverName, $dbUserName, $dbPassword, $dbName);
 
 if(!$conn) {
     die("Not Connected!". mysqli_error($conn));
 }
+
+/*
 else {
 echo"Connected successfully(`-`)";
 }
-
-$sql = "INSERT INTO students(fullName,email, studentPassword,confirm_password, admNumber, gender, progLang)
-VALUES ('$fullName','$email', '$studentPassword', '$confirm_password', '$admNumber', '$gender', '$progLang')";
+*/
 
 
+
+//Creating database query
+$sql = "INSERT INTO students(fullName, email, studentPassword, confirmPassword, admNumber, estate, gender, progLang) VALUES ('$fullName','$email', '$studentPassword', '$confirmPassword', '$admNumber','$estate', '$gender', '$progLang')";
+
+
+//setting conditins to validate connections aand registration
 if(mysqli_query($conn, $sql)) {
-    echo "Thank you for providing your details";
-     header("location: http://localhost/StudentsProject/");
+    echo "Thank you for providing your details" ;
+    
 }
 else {
     echo "Uurg, we may have encountered a problem ". $sql. "<br>". mysqli_error( $conn);
 }
 
+//Ending the connection
 
-
+mysqli_close($conn);
 
 
 
